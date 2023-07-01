@@ -1,0 +1,120 @@
+1.-Guardar la base de datos en un mapa. 
+
+2.- Modificar las struct para el uso de las listas.
+
+3.- Agregar una lista de alergias.
+
+4.-Preguntar cuantos sintomas tiene el paciente, para 
+  agregar los sintomas de manera mas intuitiva.
+5.-
+/*
+
+void comparar_sintomas(HashMap *tablaHash ,List *listaEnfermdades) {
+  
+  Sintoma *sintoma_paciente;
+  Sintoma *sintoma_de_enfermedad;
+  Enfermedad *enfermedad;
+  Paciente *paciente;
+  HashMap *aciertos = createMap(150);
+  int *cant_aciertos;
+  
+  
+  char rut[20]  ; 
+  
+  scanf("%s",rut);
+
+  if (searchMap(tablaHash, rut) != NULL) {
+    paciente = searchMap(tablaHash, rut)->value;
+  } else {
+    printf("El paciente no se encuentra en la base de datos.\n");
+    return;
+  }
+
+  sintoma_paciente = firstList(paciente->sintomas);
+  while(sintoma_paciente != NULL){
+    //printf("%s",sintoma_paciente->nombre);
+    //scanf("%d",&i); 
+    enfermedad = firstList(listaEnfermdades);
+    
+    while(enfermedad !=NULL){
+      sintoma_de_enfermedad = firstList(enfermedad->sintomas);
+      bool Se_Encontro = false;
+      
+      while(sintoma_de_enfermedad !=NULL){
+        //printf("%s",sintoma_de_enfermedad->nombre);
+        //scanf("%d",&i);
+        if(strcmp(sintoma_de_enfermedad->nombre, sintoma_paciente->nombre) == 0){
+          //printf("se encontro");
+          Se_Encontro = true;
+          break;
+        }
+        
+        
+        sintoma_de_enfermedad = nextList(enfermedad->sintomas);
+      }
+      
+      if(Se_Encontro == true){
+        if(searchMap(aciertos, enfermedad->nombre) == NULL){
+          
+          cant_aciertos = malloc(sizeof(int));
+          *cant_aciertos = 1;
+          
+          insertMap(aciertos, enfermedad->nombre, cant_aciertos);
+        }
+        else{
+          cant_aciertos = searchMap(aciertos, enfermedad->nombre)->value;
+          *cant_aciertos +=1;
+        }
+      }  
+      enfermedad = nextList(listaEnfermdades);
+    }  
+    sintoma_paciente = nextList(paciente->sintomas);
+  }
+  
+  Pair *Porcentaje_aciertos = firstMap(aciertos);
+  float Porcentaje;
+  char *nombre_enfermedad;
+  
+  while(Porcentaje_aciertos!=NULL ){
+    nombre_enfermedad = Porcentaje_aciertos->key;
+    cant_aciertos = Porcentaje_aciertos->value;
+    enfermedad = firstList(listaEnfermdades);
+    while(enfermedad){
+      if(strcmp(enfermedad->nombre,nombre_enfermedad) == 0){
+        break;
+      }
+      enfermedad = nextList(listaEnfermdades);
+      
+    }
+    Porcentaje = (*cant_aciertos * 100)/enfermedad->cant_sintomas;
+    
+    printf("%s\n %d\n %.2f % \n",nombre_enfermedad,*cant_aciertos,Porcentaje);
+    Porcentaje_aciertos = nextMap(aciertos);
+  }
+  
+}*/
+
+BASE DE DATOS 
+Bronquitis aguda,Molestia en el pecho; Tos que produce flema;Fatiga;Fiebre baja; Dificultad respiratoria que empeora con la actividad;Sibilancias, en personas con asma;Cansancio;Dolor en el pecho 
+Influenza,Tos con flema;Tos sin flema;Dolor en el pecho;Cansansio;Fatiga;Dolor de cabeza leve;Dolores corporales leves;Dolor de garganta 
+Sinusitis,Mal aliento;Pirdida del olfato;Tos;Fatiga;Fiebre;Dolor de garganta;Congestion nasal;Dolor de cabeza  
+Infeccion urinaria,Dolor al orinar;Orinar con frecuencia;Sangre en la orina;Presion en la ingle;Retrocijones en la parte inferior del abdomen;Ardor al orinar;Dolor en vejiga;Fiebre 
+Neumonia,Fiebre;Tos con flema;Escalofroos;Dificultad para respirar que empeora con la actividad;Nauseas;Vomitos;Diarrea;Dolor en el pecho 
+Diabetes Mellitus,Aumento en apetito;Fatiga;Vision borrosa;Perdida de peso;Aumento de la sed;Aumento en ganas de orinar;Hormigueo en manos o pies;Cansancio 
+Botulismo,Colicos abdominales;Dificultad para respirar;Dificultad al tragar y al hablar;Vision borrosa;Nauseas;Vomitos;Debilidad con paralisis;Estrenimiento 
+Brucelosis,Dolor abdominal;Dolor de espalda;Fiebre;Escalofrios;Fatiga;Dolor de cabeza leve;Perdida del apetito; Dolor articular y muscular 
+Carbunco,Nauseas;Vomitos;Dolor abdominal;Perdida del apetito;Diarrea;Dolor de garganta;Dificultad al tragar;Cansancio 
+Chagas,Dolor de cabeza;Dolor muscular;Fiebre;Fatiga;Perdida del apetito;Vomitos;Sarpullido;Diarrea 
+Colera,Diarrea;Deshidratacion;Nauseas;Vomito;Dolor de abdomen;Calambres musculares;Perdida de peso;Choque hipovolemico 
+Hepatitis B,Fatiga;Nauseas;Vomito;Orina oscura;Fiebre;Dolor de estomago;Dolor en articulaciones;Ojos amarillentos 
+Enfermedad valvular,Problemas para respirar;Fatiga;Hinchazon en tobillos;Hinchazon en pies;Hinchazon en abdomen;Dolor en el pecho;Mareos;Arritmia 
+Enfermedad Pulmonar (EPOC),Sibilancias al respirar;Presion en el pecho;Tos con flema;DIficultad para respirar que empeora con la actividad;Fatiga;Incapacidad de hacer ejercicio;Cansancio;Produccion de moco 
+Enfermedad celiaca,Distension abdominal;Diarrea;Estrenimiento;Gases;Nauseas;Dolor abdominal;Vomito;Fatiga 
+Parkinson,Temblores musculares,Rigidez muscular;Cambios en el habla;Deterioro de postura;Movimientos lentos;Limitaciones al caminar;Temblores en mandibula;Temblores en manos 
+Distonia,Temblores;Empeora con el estres;Dificultad al hablar;Dolor en laringe;Dolor de cuello;Dolor al tragar;Ojos secos;Fatiga 
+Difteria,Fiebre;Escalofrios;Dolor de garganta;Dolor al tragar;Coloracion azulada de la piel;Congestion nasal;Babeo;Ronquera 
+Dermatitis Atopica,Piel seca;Picazon;Erupcion en la piel hinchada;Pequenas protuberancias;Piel agrietada;Ampollas;Costras por rascarse;Fiebre leve 
+Delirium,Ansiedad;Depresion;Sensasion de auforia;Cambios de personalidad;Mal genio;Dificultad al hablar;Tendencia a la distraccion;Aislamiento 
+Coronavirus,Dolor en el pecho;Fatiga;Presion en el pecho;Cansansio;Dificultad respiratoria que empeora con la actividad;Nauseas;Arritmia;Sudoracion 
+Conjuntivitis,Enrojecimiento en parte blanca del ojo;Mayor cantidad de lagrimas;Aumento de ganas de restregarse los ojos;Picazon en ojos;Costras en parpados;Inflamacion de parpados;Costras en las pestanas;Irritacion en ojos 
+Artrosis,Dolor en articulaciones;Rigidez;Perdida de flexibilidad;Dolor en rodillas;Deformidad articular;Dolor en manos;Dolor en cadera;Hinchazon en articulaciones 

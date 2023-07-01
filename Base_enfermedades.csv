@@ -1,0 +1,30 @@
+ENFERMEDADES, SINTOMAS
+Efermedad1,sintomas1,sintomas2,sintomas3,sintomas4
+Efermedad2,sintomas1E,sintomas2,sintomas3,sintomas4
+Efermedad6,sintomas1,sintomas2,sintomas3,sintomas4,sintomas5,sintomas6,asdas,asdasd
+Asma,tos,mareo,Retraccion de la piel entre las costillas al respirar,Dificultad para respirar que empeora con la actividad,Sibilancias al respirar,Rigidez en el pecho,Dolor en el pecho,Fatiga 
+Resfriado,tos,Tos sin flema,Retraccion de la piel entre las costillas al respirar,Dificultad para respirar que empeora con la actividad,Sibilancias al respirar,Rigidez en el pecho,Dolor en el pecho,Fatiga 
+enfermedadPrueba,tos,mareo pe
+enfermedadPrueba2,tos,mareo
+Influenza,Tos con flema,Tos sin flema,Dolor en el pecho,Cansansio,Fatiga,Dolor de cabeza leve,Dolores corporales leves,Dolor de garganta 
+Sinusitis,Mal aliento,Pirdida del olfato,Tos,Fatiga,Fiebre,Dolor de garganta,Congestion nasal,Dolor de cabeza  
+Infeccion urinaria,Dolor al orinar,Orinar con frecuencia,Sangre en la orina,Presion en la ingle,Retrocijones en la parte inferior del abdomen,Ardor al orinar,Dolor en vejiga,Fiebre 
+Neumonia,Fiebre,Tos con flema,Escalofroos,Dificultad para respirar que empeora con la actividad,Nauseas,Vomitos,Diarrea,Dolor en el pecho 
+Diabetes Mellitus,Aumento en apetito,Fatiga,Vision borrosa,Perdida de peso,Aumento de la sed,Aumento en ganas de orinar,Hormigueo en manos o pies,Cansancio 
+Botulismo,Colicos abdominales,Dificultad para respirar,Dificultad al tragar y al hablar,Vision borrosa,Nauseas,Vomitos,Debilidad con paralisis,Estrenimiento 
+Brucelosis,Dolor abdominal,Dolor de espalda,Fiebre,Escalofrios,Fatiga,Dolor de cabeza leve,Perdida del apetito, Dolor articular y muscular 
+Carbunco,Nauseas,Vomitos,Dolor abdominal,Perdida del apetito,Diarrea,Dolor de garganta,Dificultad al tragar,Cansancio 
+Chagas,Dolor de cabeza,Dolor muscular,Fiebre,Fatiga,Perdida del apetito,Vomitos,Sarpullido,Diarrea 
+Colera,Diarrea,Deshidratacion,Nauseas,Vomito,Dolor de abdomen,Calambres musculares,Perdida de peso,Choque hipovolemico 
+Hepatitis B,Fatiga,Nauseas,Vomito,Orina oscura,Fiebre,Dolor de estomago,Dolor en articulaciones,Ojos amarillentos 
+Enfermedad valvular,Problemas para respirar,Fatiga,Hinchazon en tobillos,Hinchazon en pies,Hinchazon en abdomen,Dolor en el pecho,Mareos,Arritmia 
+Enfermedad Pulmonar (EPOC),Sibilancias al respirar,Presion en el pecho,Tos con flema,DIficultad para respirar que empeora con la actividad,Fatiga,Incapacidad de hacer ejercicio,Cansancio,Produccion de moco 
+Enfermedad celiaca,Distension abdominal,Diarrea,Estrenimiento,Gases,Nauseas,Dolor abdominal,Vomito,Fatiga 
+Parkinson,Temblores musculares,Rigidez muscular,Cambios en el habla,Deterioro de postura,Movimientos lentos,Limitaciones al caminar,Temblores en mand�bula,Temblores en manos 
+Distonia,Temblores,Empeora con el estres,Dificultad al hablar,Dolor en laringe,Dolor de cuello,Dolor al tragar,Ojos secos,Fatiga 
+Difteria,Fiebre,Escalofrios,Dolor de garganta,Dolor al tragar,Coloracion azulada de la piel,Congestion nasal,Babeo,Ronquera 
+Dermatitis Atopica,Piel seca,Picazon,Erupcion en la piel hinchada,Pequenas protuberancias,Piel agrietada,Ampollas,Costras por rascarse,Fiebre leve 
+Delirium,Ansiedad,Depresion,Sensasion de auforia,Cambios de personalidad,Mal genio,Dificultad al hablar,Tendencia a la distraccion,Aislamiento 
+Coronavirus,Dolor en el pecho,Fatiga,Presion en el pecho,Cansansio,Dificultad respiratoria que empeora con la actividad,Nauseas,Arritmia,Sudoracion 
+Conjuntivitis,Enrojecimiento en parte blanca del ojo,Mayor cantidad de lagrimas,Aumento de ganas de restregarse los ojos,Picazon en ojos,Costras en parpados,Inflamacion de parpados,Costras en las pestanas,Irritacion en ojos 
+Artrosis,Dolor en articulaciones,Rigidez,Perdida de flexibilidad,Dolor en rodillas,Deformidad articular,Dolor en manos,Dolor en cadera,Hinchazon en articulaciones

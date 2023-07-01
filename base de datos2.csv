@@ -1,0 +1,5 @@
+nombre,rut,edad,sexo,cantidad de sintomas,sintomas,cant de alergias,alergias,cant de enfermedadea prev,enfermedades previas.
+matias prado,20.187.831-4,24,masculino,5,tos,mareo,Retraccion de la piel entre las costillas al respirar,Dificultad para respirar que empeora con la actividad,Sibilancias al respirar,0,1,asma
+s,2,2,d,0,0,1,enferemedad
+m,20.323.1231-4,2,s,2,tos,mareo pe,3,a1,a2,a3,3,f1,f2,f3
+pedrojoaquin,20.202.202-3,24,femenino,3,tos,mareo,Dificultad para respirar que empeora con la actividad,0,1,gay
