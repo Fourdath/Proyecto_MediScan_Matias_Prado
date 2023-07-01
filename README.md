@@ -1,4 +1,4 @@
-La opcion Mostar pacientes no funciona como es debido sale un error de segmentacion
+La opcion 4 Mostar pacientes no funciona como es debido sale un error de segmentacion
 
 
 
